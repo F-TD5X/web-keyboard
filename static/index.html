@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Numpad Keyboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="status-bar">
+            <span id="connection-status">Disconnected</span>
+            <span id="device-info">Device: None</span>
+        </div>
+
+        <div class="numpad">
+            <div class="numpad-row">
+                <button class="key" data-key="7">7</button>
+                <button class="key" data-key="8">8</button>
+                <button class="key" data-key="9">9</button>
+                <button class="key operator" data-key="/">&divide;</button>
+            </div>
+            <div class="numpad-row">
+                <button class="key" data-key="4">4</button>
+                <button class="key" data-key="5">5</button>
+                <button class="key" data-key="6">6</button>
+                <button class="key operator" data-key="*">&times;</button>
+            </div>
+            <div class="numpad-row">
+                <button class="key" data-key="1">1</button>
+                <button class="key" data-key="2">2</button>
+                <button class="key" data-key="3">3</button>
+                <button class="key operator" data-key="-">&minus;</button>
+            </div>
+            <div class="numpad-row">
+                <button class="key" data-key="0">0</button>
+                <button class="key" data-key=".">.</button>
+                <button class="key special" data-key="enter">Enter</button>
+                <button class="key operator" data-key="+">+</button>
+            </div>
+            <div class="numpad-row">
+                <button class="key special" data-key="backspace">Backspace</button>
+                <button class="key special" data-key="escape">Escape</button>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Click or tap the buttons to send key presses to the host computer</li>
+                <li>Only one device can connect at a time</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
